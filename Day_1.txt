@@ -1,0 +1,1093 @@
+# DAY 1 — AI & ML INDUSTRY OVERVIEW
+
+## Workshop Goal
+
+By the end of Day 1, I should be able to:
+
+* Explain AI, ML, Deep Learning, Generative AI, and Agentic AI.
+* Understand how these technologies are related.
+* Explain the difference between traditional programming and machine learning.
+* Understand the lifecycle of an industry AI project.
+* Identify when AI/ML is actually useful and when it is unnecessary.
+* Understand real-world AI applications.
+* Build and run a simple machine learning application.
+* Explain basic AI systems confidently to a mentor.
+* Ask meaningful technical questions instead of using buzzwords.
+
+---
+
+# 1. AI INDUSTRY LANDSCAPE
+
+## 1.1 What is Artificial Intelligence?
+
+Artificial Intelligence is the broad field of building computer systems that can perform tasks that normally require some form of human intelligence.
+
+Examples include:
+
+* Understanding language
+* Recognizing images
+* Making predictions
+* Recommending products
+* Detecting fraud
+* Understanding speech
+* Planning actions
+* Generating content
+
+### Real-world examples
+
+| Industry         | AI Application         |
+| ---------------- | ---------------------- |
+| Banking          | Fraud detection        |
+| Healthcare       | Medical image analysis |
+| E-commerce       | Product recommendation |
+| Education        | AI tutors              |
+| Software         | Coding assistants      |
+| Finance          | Risk analysis          |
+| Manufacturing    | Predictive maintenance |
+| Customer support | AI assistants          |
+
+### Important idea
+
+AI is not one algorithm.
+
+It is a broad field containing many different approaches and technologies.
+
+---
+
+# 2. MACHINE LEARNING
+
+## 2.1 What is Machine Learning?
+
+Machine Learning is a way of building systems that learn patterns from data and use those learned patterns to make predictions or decisions on new data.
+
+Instead of manually writing every rule, we provide examples and allow an algorithm to learn a pattern.
+
+### Traditional programming
+
+```text
+Rules + Data
+     ↓
+  Program
+     ↓
+  Output
+```
+
+Example:
+
+```text
+IF temperature > 38°C
+THEN show "High Temperature"
+```
+
+---
+
+## 2.2 Machine Learning
+
+```text
+Training Data
+     ↓
+ML Algorithm
+     ↓
+Learned Model
+     ↓
+New Data
+     ↓
+Prediction
+```
+
+Example:
+
+We provide previous house prices:
+
+```text
+Area     Bedrooms     Price
+1000        2        ₹40 lakh
+1500        3        ₹60 lakh
+2000        3        ₹80 lakh
+2500        4        ₹1 crore
+```
+
+The model learns relationships between the input features and price.
+
+Then we give:
+
+```text
+Area = 1800 sq ft
+Bedrooms = 3
+```
+
+The model predicts an estimated price.
+
+---
+
+# 3. DEEP LEARNING
+
+Deep Learning is a subset of Machine Learning that primarily uses multi-layer neural networks.
+
+It is particularly useful for complex data such as:
+
+* Images
+* Audio
+* Video
+* Natural language
+* Speech
+
+### Simplified structure
+
+```text
+Input
+  ↓
+Neural Network
+  ↓
+Multiple Layers
+  ↓
+Learned Patterns
+  ↓
+Output
+```
+
+### Examples
+
+* Face recognition
+* Speech recognition
+* Image classification
+* Large language models
+* Autonomous systems
+
+---
+
+# 4. GENERATIVE AI
+
+Generative AI refers to AI systems capable of generating new content.
+
+Examples:
+
+* Text
+* Code
+* Images
+* Audio
+* Video
+* Structured outputs
+
+### Example
+
+Input:
+
+```text
+Write a Python function to sort an array.
+```
+
+Output:
+
+```python
+def sort_array(arr):
+    return sorted(arr)
+```
+
+Large Language Models are an important technology behind modern text-based Generative AI applications.
+
+---
+
+# 5. AGENTIC AI
+
+Agentic AI refers to systems designed to pursue a goal through multiple steps, often using:
+
+* Reasoning
+* Planning
+* Memory/state
+* Tools
+* APIs
+* Function calling
+* Feedback from the environment
+
+### Example
+
+User:
+
+```text
+Find my pending orders and prepare an email asking customer support about them.
+```
+
+An agent could:
+
+```text
+Understand request
+      ↓
+Check order system
+      ↓
+Find pending orders
+      ↓
+Analyze results
+      ↓
+Generate email
+      ↓
+Return draft
+```
+
+### Important distinction
+
+A single LLM response is not automatically an AI agent.
+
+An agent normally involves some combination of:
+
+```text
+Goal
+ ↓
+Planning
+ ↓
+Tool use
+ ↓
+Observation
+ ↓
+Next action
+ ↓
+Final result
+```
+
+---
+
+# 6. HOW AI, ML, DL, GENAI AND AGENTS RELATE
+
+Do not memorize them as five completely separate technologies.
+
+A useful mental model is:
+
+```text
+Artificial Intelligence
+│
+├── Machine Learning
+│   │
+│   └── Deep Learning
+│
+├── Rule-based AI
+│
+└── Other AI approaches
+```
+
+Modern Generative AI frequently uses Deep Learning.
+
+Agentic AI can use Generative AI models as reasoning or language components.
+
+Therefore, these concepts can overlap.
+
+---
+
+# 7. THE MOST IMPORTANT INDUSTRY QUESTION
+
+Before choosing a technology, ask:
+
+> "What problem are we actually trying to solve?"
+
+Do not start with:
+
+```text
+"We need AI."
+```
+
+Start with:
+
+```text
+What problem?
+     ↓
+What data?
+     ↓
+What output?
+     ↓
+What constraints?
+     ↓
+What is the simplest reliable solution?
+```
+
+Sometimes the correct solution is AI.
+
+Sometimes it is:
+
+* A database query
+* A rule-based system
+* A normal API
+* A search system
+* A simple statistical method
+* Human review
+
+Using AI unnecessarily can increase:
+
+* Cost
+* Complexity
+* Latency
+* Maintenance
+* Failure points
+
+---
+
+# 8. AI PROJECT LIFECYCLE
+
+A real AI project normally follows a process similar to:
+
+```text
+1. Problem Definition
+        ↓
+2. Success Criteria
+        ↓
+3. Data Collection
+        ↓
+4. Data Understanding
+        ↓
+5. Data Cleaning
+        ↓
+6. Baseline
+        ↓
+7. Model / AI System
+        ↓
+8. Evaluation
+        ↓
+9. Deployment
+        ↓
+10. Monitoring
+        ↓
+11. Improvement
+```
+
+The process is iterative.
+
+You may go backwards when something fails.
+
+---
+
+# 9. STEP 1 — DEFINE THE PROBLEM
+
+Bad problem:
+
+```text
+"Let's build an AI system."
+```
+
+Better:
+
+```text
+"Reduce fraudulent transactions while minimizing
+legitimate transactions being incorrectly blocked."
+```
+
+A good AI problem should have:
+
+* Clear input
+* Clear output
+* Measurable objective
+* Available or obtainable data
+* Business/user value
+
+---
+
+# 10. STEP 2 — DEFINE SUCCESS
+
+Never assume that model accuracy alone defines success.
+
+Possible metrics include:
+
+### Technical metrics
+
+* Accuracy
+* Precision
+* Recall
+* F1-score
+* MAE
+* RMSE
+* Latency
+* Throughput
+
+### Business metrics
+
+* Revenue
+* Cost reduction
+* Customer satisfaction
+* Conversion rate
+* Fraud loss
+* Support resolution time
+
+Example:
+
+A model has:
+
+```text
+Accuracy = 95%
+```
+
+That sounds good.
+
+But suppose:
+
+```text
+Response time = 8 seconds
+```
+
+for a real-time application.
+
+The model might not satisfy the actual product requirement.
+
+Therefore:
+
+> Highest model accuracy does not automatically mean the best production system.
+
+---
+
+# 11. REAL-WORLD SCENARIO 1 — CREDIT CARD FRAUD
+
+## Problem
+
+A bank wants to identify suspicious transactions.
+
+The system should detect fraud quickly without unnecessarily blocking legitimate customers.
+
+---
+
+## Possible input features
+
+```text
+Transaction amount
+Merchant
+Time
+Location
+Device
+Customer history
+Transaction frequency
+Previous behavior
+```
+
+---
+
+## Production pipeline
+
+```text
+Transaction
+     ↓
+Validation
+     ↓
+Feature Creation
+     ↓
+ML Model
+     ↓
+Fraud Probability
+     ↓
+Business Decision
+     ↓
+Approve / Verify / Block / Human Review
+```
+
+---
+
+## Dry Run
+
+Suppose a customer normally makes:
+
+```text
+₹500 – ₹3,000
+```
+
+transactions in Jaipur during the daytime.
+
+Suddenly:
+
+```text
+Amount = ₹80,000
+Time = 3:10 AM
+Location = New location
+Device = New device
+```
+
+The ML model may produce:
+
+```text
+Fraud probability = 0.94
+```
+
+The production system can then decide what action to take.
+
+It might:
+
+```text
+Approve
+Verify
+Block
+Send for human review
+```
+
+The ML model does not necessarily make the final business decision by itself.
+
+---
+
+## Possible failures
+
+### False Positive
+
+Legitimate transaction is classified as fraud.
+
+Result:
+
+```text
+Customer gets annoyed
+```
+
+### False Negative
+
+Fraudulent transaction is classified as legitimate.
+
+Result:
+
+```text
+Bank loses money
+```
+
+### Other problems
+
+* Data drift
+* New fraud patterns
+* Poor training data
+* Attackers adapting to the system
+* Incorrect evaluation
+
+### Mentor Question
+
+> "In a production fraud detection system, how do you balance false positives against false negatives, and who decides that trade-off?"
+
+---
+
+# 12. REAL-WORLD SCENARIO 2 — E-COMMERCE RECOMMENDATIONS
+
+## Problem
+
+An e-commerce company wants to show products that are useful to each customer.
+
+Possible signals:
+
+```text
+Search history
+Browsing history
+Previous purchases
+Product similarity
+Popular products
+Customer preferences
+Context
+```
+
+---
+
+## Pipeline
+
+```text
+Customer Activity
+       ↓
+Candidate Products
+       ↓
+Recommendation / Ranking Model
+       ↓
+Top Products
+       ↓
+Website / App
+```
+
+---
+
+## Important lesson
+
+More AI does not automatically mean a better product.
+
+The company also cares about:
+
+* Relevance
+* Latency
+* User experience
+* Revenue
+* Diversity
+* Business rules
+
+### Mentor Question
+
+> "How do companies evaluate whether a recommendation system improves the customer experience rather than only increasing clicks?"
+
+---
+
+# 13. REAL-WORLD SCENARIO 3 — COMPANY DOCUMENT CHATBOT
+
+Suppose a company has thousands of:
+
+* HR documents
+* Policies
+* Manuals
+* Technical documents
+* Internal guides
+
+Employees ask:
+
+```text
+"How many days of leave can I carry forward?"
+```
+
+A RAG-based system can:
+
+```text
+Company Documents
+       ↓
+Document Processing
+       ↓
+Chunking
+       ↓
+Embeddings
+       ↓
+Vector Database
+       ↓
+User Question
+       ↓
+Retrieve Relevant Information
+       ↓
+LLM
+       ↓
+Answer
+```
+
+This is called:
+
+# Retrieval-Augmented Generation (RAG)
+
+---
+
+## Important limitation
+
+RAG does not automatically guarantee a correct answer.
+
+Problems can still occur because:
+
+* Documents may be outdated.
+* Relevant information may not be retrieved.
+* Retrieved information may be incomplete.
+* The LLM may interpret the context incorrectly.
+
+### Mentor Question
+
+> "How would you evaluate retrieval quality separately from the quality of the final LLM answer?"
+
+---
+
+# 14. REAL-WORLD SCENARIO 4 — AI CODING ASSISTANT
+
+An AI coding assistant can:
+
+* Generate code
+* Explain code
+* Debug code
+* Suggest improvements
+* Generate tests
+* Convert code between languages
+
+But developers still need to:
+
+```text
+Review
+ ↓
+Test
+ ↓
+Validate
+ ↓
+Secure
+ ↓
+Deploy
+```
+
+Generated code can contain:
+
+* Incorrect assumptions
+* Security vulnerabilities
+* Inefficient algorithms
+* Incorrect APIs
+* Nonexistent functions
+
+### Important lesson
+
+> Generative AI increases developer leverage; it does not eliminate software engineering judgment.
+
+---
+
+# 15. PROTOTYPE VS PRODUCTION
+
+## Prototype
+
+A prototype answers:
+
+> "Can this idea work?"
+
+It may contain:
+
+* Basic UI
+* Simple model
+* Hardcoded configuration
+* Limited error handling
+
+---
+
+## Production
+
+Production asks:
+
+> "Can real users depend on this system?"
+
+You may need:
+
+* Authentication
+* Authorization
+* API design
+* Testing
+* Logging
+* Monitoring
+* Security
+* Scaling
+* Version control
+* Model versioning
+* Failure handling
+* Cost control
+* Data validation
+
+Therefore:
+
+```text
+Prototype ≠ Production
+```
+
+---
+
+# 16. DAY 1 HANDS-ON — FIRST ML APPLICATION
+
+## Project Structure
+
+```text
+day-01-ai-ml-overview/
+│
+├── README.md
+│
+├── notes/
+│   └── ai-ml-fundamentals.md
+│
+└── practical/
+    └── first-ml-application.py
+```
+
+---
+
+# 17. FIRST MACHINE LEARNING PROGRAM
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+
+X = [
+    [20, 20000],
+    [22, 25000],
+    [25, 30000],
+    [35, 70000],
+    [40, 90000]
+]
+
+y = [0, 0, 0, 1, 1]
+
+model = DecisionTreeClassifier()
+
+model.fit(X, y)
+
+prediction = model.predict([[30, 50000]])
+
+print("Prediction:", prediction[0])
+```
+
+---
+
+# 18. UNDERSTANDING THE CODE
+
+## Step 1
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+```
+
+We import a Decision Tree classification algorithm from scikit-learn.
+
+---
+
+## Step 2
+
+```python
+X = [
+    [20, 20000],
+    [22, 25000],
+    [25, 30000],
+    [35, 70000],
+    [40, 90000]
+]
+```
+
+`X` contains the input features.
+
+Here:
+
+```text
+Feature 1 = Age
+Feature 2 = Income
+```
+
+---
+
+## Step 3
+
+```python
+y = [0, 0, 0, 1, 1]
+```
+
+`y` contains the known output classes.
+
+For example:
+
+```text
+0 = Class 0
+1 = Class 1
+```
+
+---
+
+## Step 4
+
+```python
+model = DecisionTreeClassifier()
+```
+
+We create the machine learning model.
+
+---
+
+## Step 5
+
+```python
+model.fit(X, y)
+```
+
+This is the training step.
+
+The model examines the examples and learns patterns.
+
+---
+
+## Step 6
+
+```python
+prediction = model.predict([[30, 50000]])
+```
+
+We give the trained model a new example:
+
+```text
+Age = 30
+Income = 50,000
+```
+
+The model predicts its class.
+
+---
+
+## Step 7
+
+```python
+print("Prediction:", prediction[0])
+```
+
+We display the result.
+
+---
+
+# 19. IMPORTANT ML LESSON
+
+Do not conclude:
+
+> "The model works because it produced a prediction."
+
+A prediction is not proof of model quality.
+
+Later, you will learn:
+
+```text
+Training Data
+      ↓
+Model
+      ↓
+Test Data
+      ↓
+Evaluation
+      ↓
+Performance
+```
+
+You need proper evaluation before trusting a model.
+
+---
+
+# 20. DAY 1 MENTOR QUESTIONS
+
+Do not ask all of these just to sound intelligent.
+
+Choose questions that match the discussion.
+
+### Question 1
+
+> "How do you decide whether a real-world problem actually requires machine learning instead of a rule-based solution?"
+
+### Question 2
+
+> "What usually causes AI projects to fail in industry: poor data, unclear business requirements, model performance, or deployment problems?"
+
+### Question 3
+
+> "At what point do you consider an AI prototype production-ready?"
+
+### Question 4
+
+> "How do you detect when production data has changed enough that a model needs retraining?"
+
+### Question 5
+
+> "When would you choose a smaller AI model even if a larger model performs better on benchmarks?"
+
+### Question 6
+
+> "How do you evaluate an AI system when technical metrics and business metrics tell different stories?"
+
+---
+
+# 21. DAY 1 INTERVIEW / CONFIDENCE DRILL
+
+Be able to answer these without reading notes.
+
+### Fundamentals
+
+1. What is AI?
+2. What is Machine Learning?
+3. What is Deep Learning?
+4. What is Generative AI?
+5. What is Agentic AI?
+6. How are AI, ML and Deep Learning related?
+7. What is a machine learning model?
+8. What is training?
+9. What is prediction?
+10. Why do we need test data?
+
+### Industry
+
+11. What is an AI project lifecycle?
+12. Why is problem definition important?
+13. When should you not use ML?
+14. Why is accuracy not always enough?
+15. What is data drift?
+16. What is model monitoring?
+17. What is the difference between prototype and production?
+
+### GenAI / Agents
+
+18. What is an LLM?
+19. What is RAG?
+20. What is an AI agent?
+21. What is the difference between a chatbot and an agent?
+22. Why does RAG not guarantee a correct answer?
+
+---
+
+# 22. 60-SECOND AI EXPLANATION
+
+Practice saying this naturally:
+
+> "AI is the broader field of building systems that perform tasks associated with intelligent behavior. Machine learning is one approach where models learn patterns from data. Deep learning uses neural networks and is particularly powerful for complex data such as images and language. Generative AI focuses on creating new content, while agentic AI focuses on systems that can pursue multi-step goals using models, tools and state. In industry, the important part isn't simply choosing the most advanced technology. We first define the problem, understand the data and constraints, choose an appropriate approach, evaluate it, deploy it and monitor its real-world performance."
+
+---
+
+# 23. DAY 1 GIT WORK
+
+After completing your work:
+
+```bash
+git add .
+```
+
+```bash
+git commit -m "Day 01: AI ML fundamentals and first ML application"
+```
+
+```bash
+git push
+```
+
+---
+
+# 24. DAY 1 CHECKLIST
+
+Before moving to Day 2:
+
+* [ ] Python environment working
+* [ ] VS Code configured
+* [ ] Git configured
+* [ ] GitHub repository created
+* [ ] AI fundamentals understood
+* [ ] ML fundamentals understood
+* [ ] Deep Learning understood
+* [ ] Generative AI understood
+* [ ] Agentic AI understood
+* [ ] AI project lifecycle understood
+* [ ] At least 3 real-world AI scenarios understood
+* [ ] First ML application executed
+* [ ] Code explained line by line
+* [ ] Prototype vs production understood
+* [ ] At least one mentor question asked
+* [ ] One useful mentor answer written down
+* [ ] 60-second explanation practiced
+* [ ] Day 1 Git commit completed
+
+---
+
+# 25. FINAL DAY 1 MENTAL MODEL
+
+Remember this:
+
+```text
+              AI
+               │
+      ┌────────┼─────────┐
+      │        │         │
+     ML    Rule-Based   Other
+      │
+ Deep Learning
+      │
+Modern GenAI
+      │
+  LLM Applications
+      │
+   AI Agents
+```
+
+But remember that these categories can overlap.
+
+For an industry project, think:
+
+```text
+PROBLEM
+   ↓
+DATA
+   ↓
+METHOD
+   ↓
+MODEL / AI SYSTEM
+   ↓
+EVALUATION
+   ↓
+DEPLOYMENT
+   ↓
+MONITORING
+   ↓
+BUSINESS RESULT
+```
+
+## The most important sentence from Day 1
+
+> **AI is not the goal. Solving the right problem reliably is the goal.**
+
+If you understand that principle, you are already thinking more like an AI engineer than someone who is simply memorizing AI terminology.
