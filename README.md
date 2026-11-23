@@ -1,4 +1,4 @@
-# AI/ML + GenAI + Agentic AI — 12-Day Industry Workshop
+# AI/ML + GenAI + Agentic AI 
 
 > **Duration:** 12 Days  
 > **Recommended effort:** 3–4 hours/day  
@@ -7,7 +7,7 @@
 
 ---
 
-## Why I am doing this workshop
+## Why I am doing this 
 
 The biggest risk is **passive attendance**. Listening to a mentor for 12 days will not make me stand out or become one of the 10–20 students selected for an internship.
 
